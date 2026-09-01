@@ -33,3 +33,6 @@ build/
 .vscode/
 
 /src/main/resources/credentials.properties
+
+### Claude Code ###
+CLAUDE.md
