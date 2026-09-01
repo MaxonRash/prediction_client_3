@@ -209,6 +209,15 @@ public class PredictionClient3Application {
                                     if (newLine.startsWith("0")) {
                                         newLine = "0" + newLine;
                                     }
+
+                                    // ------------------- added after update
+
+                                    int indexOfVerticalLineSymbol = newLine.indexOf("|");
+                                    if (indexOfVerticalLineSymbol == 7) {
+                                        newLine = "0" + newLine;
+                                    }
+
+                                    // ------------------- /end of added after update
 //                                    System.out.println("getExistingStartAfterTurn1Time returns: " + newLine.substring(0, 8));
                                     return newLine.substring(0, 8);
                                 }
